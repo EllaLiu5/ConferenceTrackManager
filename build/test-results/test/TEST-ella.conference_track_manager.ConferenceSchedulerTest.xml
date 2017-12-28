@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ella.conference_track_manager.ConferenceSchedulerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-12-28T09:02:02" hostname="MacBook-Air-3.local" time="7.299">
+  <properties/>
+  <testcase name="testAddValideTalks" classname="ella.conference_track_manager.ConferenceSchedulerTest" time="7.299"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
