@@ -2,6 +2,7 @@ package ella.conference_track_manager;
 
 import static org.junit.Assert.assertEquals;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -11,7 +12,7 @@ import org.junit.Test;
 
 public class DPSolverTest {
 	@Test
-	public void testProcess() {
+	public void testProcess() throws IOException {
 		DPSolver solver = new DPSolver();
 		List<String> talks = DataReader.readFile("src/main/resources/input.txt");
 		ConferenceScheduler.addValideTalks(talks);

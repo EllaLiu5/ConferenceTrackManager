@@ -1,10 +1,22 @@
 package ella.conference_track_manager;
 
 import java.util.List;
+import java.util.logging.Logger;
 
+/**
+ * @author liu
+ * implementation of Dynamic Programming algorithm
+ */
 public class DPSolver {
+	private static Logger log;
+	static {
+		log = Logger.getLogger(Main.class.getName());
+	}
 	//passed test
 	public boolean[] process(int sessionTime, List<Talk> talks) {
+		if(talks == null || talks.isEmpty()) {
+			log.severe("test data is invalid");
+		}
 		int N = talks.size();
 		int T = sessionTime;
 		int[] talkTime = new int[N+1];

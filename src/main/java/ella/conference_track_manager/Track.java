@@ -16,7 +16,6 @@ public class Track {
 		sessions.add(session);
 	}
 	
-	//passed
 	public void output() {
 		Iterator<Session> iter = sessions.iterator();
 		int currentSessionEndTime = 0;

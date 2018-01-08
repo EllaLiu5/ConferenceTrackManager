@@ -2,6 +2,10 @@ package ella.conference_track_manager;
 
 import java.util.List;
 
+/**
+ * @author liu
+ * session without talks
+ */
 public class IntervalSession extends Session{
 
 	public IntervalSession(String type, int startTime, int endTime) {

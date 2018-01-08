@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 
+/**
+ * @author liu
+ * talk session
+ */
 public class TalkSession extends Session{
 	private List<Talk> talks;
 
@@ -17,7 +21,6 @@ public class TalkSession extends Session{
 		talks.add(new Talk(talk));
 	}
 	
-	//passed
 	public void processTalks(List<Talk> talks) {
 		DPSolver solver = new DPSolver();
 		int sessionTime = endTime - startTime;
@@ -33,8 +36,7 @@ public class TalkSession extends Session{
 			i++;
 		}
 	}
-	
-	//passed
+
 	@Override
 	public int calculateActualEndTime() {
 		int sumTime = 0;

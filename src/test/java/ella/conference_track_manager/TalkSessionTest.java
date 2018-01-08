@@ -2,6 +2,7 @@ package ella.conference_track_manager;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class TalkSessionTest {
 	}
 	
 	@Test
-	public void testProcessTalks() {
+	public void testProcessTalks() throws IOException {
 		List<String> talks = DataReader.readFile("src/main/resources/input.txt");
 		ConferenceScheduler.addValideTalks(talks);
 		List<Talk> talkList = ConferenceScheduler.getTalksList();

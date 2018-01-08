@@ -3,7 +3,6 @@ package ella.conference_track_manager;
 import static org.junit.Assert.*;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.charset.Charset;
@@ -12,7 +11,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-import org.apache.logging.log4j.core.util.FileUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
